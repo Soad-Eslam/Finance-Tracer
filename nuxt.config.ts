@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   app: {
-    baseURL: '/Finance-Tracker/'
+    baseURL: '/Finance-Tracker/',
+    buildAssetsDir: 'assets'
   },
   modules: ["@nuxt/ui", "@nuxtjs/supabase"],
   css: ["~/assets/css/main.css"],
