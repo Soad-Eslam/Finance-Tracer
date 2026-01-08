@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="font-bold" :class="{'green':trendingUp ,'red':!trendingUp}">{{ title }}</div>
-        <div class="text-2xl font-extrabold text-black  mb-2">
+        <div class="text-2xl font-extrabold text-gray-800  mb-2">
             <USkeleton class="h-8 w-full" v-if="loading"/>
             <div v-else>${{ amount }}</div>
         </div>
